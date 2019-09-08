@@ -73,7 +73,8 @@ export default class Websockets extends React.Component {
   }
 
   createWebSocket() {
-    this.ws = new WebSocket("ws://chat-server-ws.herokuapp.com");
+    // use ws for http(localhost) and wss for https
+    this.ws = new WebSocket("wss://chat-server-ws.herokuapp.com");
 
     this.ws.onmessage = e => this.onMessage(e);
     this.ws.onerror = e => this.onError(e);
