@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#message-window {
+  margin: 3vh 0;
+}
+#message-box {
+  background: #f5f5f5;
+  width: 90vw;
+  height: 82vh;
+  margin: auto;
+  position: relative;
+  overflow-y: scroll;
+}
+#inputs {
+  width: 90vw;
+  margin: auto;
+  padding-top: 20px;
+}
+#inputs > input {
+  width: 83vw;
+}
+#inputs > button {
+  padding: 0;
+  width: 6vw;
+  margin-left: 1vw;
+}
+.message {
+  background: white;
+  padding: 1.5em 1em 1em 1em;
+  border-radius: 2.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  text-align: center;
+  margin-bottom: 1em;
+  min-width: 10em;
+  width: fit-content;
+  position: relative;
+  word-wrap: break-word;
+  max-width: 30vw;
+}
+.message:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#client-name {
+  width: 90vw;
+  margin: auto;
+  position: relative;
+}
+.message > span {
+  position: absolute;
+  top: 0.5em;
+  left: 2em;
+  text-align: left;
+  font-size: 0.7em;
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 768px) {
+  #inputs > button {
+    width: 16vw;
+  }
+  #inputs > input {
+    width: 73vw;
+  }
+  .message {
+    min-width: 6em;
+    padding: 1.5em 0.5em 0.5em 0.5em;
+    border-radius: 2.5em;
+  }
+}
