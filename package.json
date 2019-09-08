@@ -35,7 +35,8 @@
   "dependencies": {
     "antd": "^3.23.1",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "serve": "^11.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -58,7 +59,6 @@
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
-    "serve": "^11.1.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
